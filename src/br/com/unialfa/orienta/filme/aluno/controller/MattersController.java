@@ -10,15 +10,18 @@ public class MattersController {
 
     private static final List<Matter> movies = new ArrayList<>();
 
-    public static List<Matter> getMatters() {
+    public static List<Matter> index() {
         return Collections.unmodifiableList(movies);
     }
 
-    public static void addMatter(Matter matter) {
+    public static void store(Matter matter) {
         movies.add(matter);
     }
 
-    public static void removeMatter(Matter matter) {
+    public static void update(Matter matter) {
+    }
+
+    public static void delete(Matter matter) {
         movies.remove(matter);
     }
 

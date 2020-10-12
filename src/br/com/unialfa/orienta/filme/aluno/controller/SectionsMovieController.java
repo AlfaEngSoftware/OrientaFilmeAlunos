@@ -14,7 +14,7 @@ public class SectionsMovieController {
         return sections.get(movie);
     }
 
-    public static Map<Movie, Matter> getSections() {
+    public static Map<Movie, Matter> index() {
         return sections;
     }
 }

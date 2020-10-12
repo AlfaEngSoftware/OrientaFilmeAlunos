@@ -10,16 +10,19 @@ public class MoviesController {
 
     private static final List<Movie> movies = new ArrayList<>();
 
-    public static List<Movie> getMovies() {
+    public static List<Movie> index() {
         return Collections.unmodifiableList(movies);
     }
 
-    public static void addMovie(Movie movide) {
-        movies.add(movide);
+    public static void store(Movie movie) {
+        movies.add(movie);
     }
 
-    public static void removeMovie(Movie movide) {
-        movies.remove(movide);
+    public static void update(Movie movie) {
+    }
+
+    public static void delete(Movie movie) {
+        movies.remove(movie);
     }
 
 }

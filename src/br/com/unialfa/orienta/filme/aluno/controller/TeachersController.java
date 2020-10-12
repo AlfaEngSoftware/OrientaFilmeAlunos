@@ -10,15 +10,18 @@ public class TeachersController {
 
     private static final List<Teacher> teachers = new ArrayList<>();
 
-    public static List<Teacher> getTeachers() {
+    public static List<Teacher> index() {
         return Collections.unmodifiableList(teachers);
     }
 
-    public static void addTeacher(Teacher teacher) {
+    public static void store(Teacher teacher) {
         teachers.add(teacher);
     }
 
-    public static void removeTeacher(Teacher teacher) {
+    public static void update(Teacher teacher) {
+    }
+
+    public static void delete(Teacher teacher) {
         teachers.remove(teacher);
     }
 
